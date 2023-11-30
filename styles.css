@@ -1,3 +1,13 @@
+
+:root{
+    --padding-sidebar: 15px;
+}
+
+
+li{
+    list-style-type: none;
+}
+
 .container{
     min-height: 100vh;
     min-height: 100dvh;
@@ -18,8 +28,33 @@ header{
 #sidebar{
     grid-row: 1 / -1;
     background: #456;
+
+    padding: var(--padding-sidebar);
+}
+
+.side-item{
+
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    gap: var(--padding-sidebar);
+    margin-bottom: calc(3*var(--padding-sidebar));
+}
+
+.placeholder-img{
+    height:100%;
+    aspect-ratio: 1;
+
+    background-color: white;
+    justify-self: end;
+}
+
+#brand #brand-name{
+    margin:0;
+    padding:0;
 }
 
 main{
     background: #abc;
 }
+
