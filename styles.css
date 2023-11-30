@@ -1,0 +1,25 @@
+.container{
+    min-height: 100vh;
+    min-height: 100dvh;
+    display:grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.container >*{
+    border: 2px solid #444;
+}
+
+header{
+    grid-column: 2 / -1;
+    background: #123;
+}
+
+#sidebar{
+    grid-row: 1 / -1;
+    background: #456;
+}
+
+main{
+    background: #abc;
+}
