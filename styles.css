@@ -11,6 +11,7 @@ li{
 .container{
     height: 100vh;
     height: 100dvh;
+    margin: 0 auto;
     display:grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 4fr;
@@ -21,7 +22,7 @@ li{
 }
 
 .placeholder-img{
-    height:100%;
+    height:10px;
     aspect-ratio: 1;
     background-color: white;
 }
@@ -97,6 +98,7 @@ header .placeholder-img{
 }
 
 #sidebar .placeholder-img{
+    height:100%;
     justify-self: end;
 }
 
@@ -107,5 +109,26 @@ header .placeholder-img{
 
 main{
     background: #abc;
+
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+}
+
+main .projects{
+    background-color: lightpink;
+}
+
+.projects .cards{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 15px;
+    gap: 15px;
+}
+
+.projects .cards .card{
+    background-color: white;
+    border: 2px solid black;
+    aspect-ratio: 1.5/1;
 }
 
