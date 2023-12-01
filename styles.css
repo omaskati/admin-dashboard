@@ -1,6 +1,10 @@
+*{
+    box-sizing: border-box;
+}
 
 :root{
     --padding-sidebar: 15px;
+    --padding-header: 10px;
 }
 
 
@@ -9,16 +13,17 @@ li{
 }
 
 .container{
+    width:100%;
     height: 100vh;
-    height: 100dvh;
-    margin: 0 auto;
+    height: 100svh;
+
     display:grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
 }
 
 .container >*{
-    border: 2px solid #444;
+    border: 1px solid #444444;
 }
 
 .placeholder-img{
@@ -29,30 +34,47 @@ li{
 
 header{
     grid-column: 2 / -1;
-    background: #890;
 
-    padding: 10px 40px;
+    background: rgb(0, 64, 153);
+    padding: 20px 50px;
+    
+
+    /* display: flex;
+    flex-flow: column nowrap; */
+
+    /* padding: 10px 40px; */
 }
 
 #header-top{
-    display: grid;
-    grid-template-columns: 8fr 1fr 1fr 2fr;
-    grid-auto-flow: column;
+    /* display: flex;
     align-items: center;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: 4fr 1fr;
 }
 
 #header-search{
-    width:100%;
+}
+
+#header-dock{
+    display:grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    gap:5px;
+
+    .placeholder-img{
+    }
 }
 
 #search-bar{
-    width:80%;
+    width:60%;
 }
 
 #header-bottom{
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
 
 #header-welcome{
@@ -76,8 +98,8 @@ header{
 
 header .placeholder-img{
 
-    width:40px;
-    height: 40px;
+    /* width:40px;
+    height: 40px; */
 }
 
 
@@ -85,50 +107,73 @@ header .placeholder-img{
     grid-row: 1 / -1;
     background: #456;
 
-    padding: var(--padding-sidebar);
+    /* padding: var(--padding-sidebar); */
 }
 
 .side-item{
 
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 5fr;
     align-items: center;
     gap: var(--padding-sidebar);
-    margin-bottom: calc(3*var(--padding-sidebar));
+    margin-bottom: calc(3*var(--padding-sidebar)); */
 }
 
 #sidebar .placeholder-img{
-    height:100%;
-    justify-self: end;
+    /* height:100%; */
+    /* justify-self: end; */
 }
 
 #brand #brand-name{
-    margin:0;
-    padding:0;
+    /* margin:0;
+    padding:0; */
 }
 
 main{
     background: #abc;
+    grid-column: 2 / -1;
+    grid-row: 2 / -1;
 
-    display: grid;
-    grid-template-columns: 2.5fr 1fr;
+    /* display: grid;
+    grid-template-columns: 2.5fr 1fr; */
 }
 
 main .projects{
-    background-color: lightpink;
+    /* background-color: lightpink; */
 }
 
 .projects .cards{
 
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     margin: 15px;
-    gap: 15px;
+    gap: 15px; */
 }
 
 .projects .cards .card{
-    background-color: white;
+    /* background-color: white;
     border: 2px solid black;
-    aspect-ratio: 1.5/1;
+    aspect-ratio: 1.5/1; */
 }
+
+
+main aside{
+    /* display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap:15px; */
+}
+
+main > aside > *{
+    /* border: 1px solid black; */
+}
+.announcement-card{
+    /* display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+    border: solid 2px #444; */
+}
+
+.announcement p{
+    /* font-size: 10px; */
+}
+
 
