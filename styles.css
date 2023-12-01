@@ -27,7 +27,6 @@ li{
 }
 
 .placeholder-img{
-    height:10px;
     aspect-ratio: 1;
     background-color: white;
 }
@@ -39,8 +38,8 @@ header{
     padding: 20px 50px;
     
 
-    /* display: flex;
-    flex-flow: column nowrap; */
+    /* display: grid;
+    gap:10px; */
 
     /* padding: 10px 40px; */
 }
@@ -51,6 +50,7 @@ header{
     justify-content: space-between; */
     display: grid;
     grid-template-columns: 4fr 1fr;
+    align-items: center;
 }
 
 #header-search{
@@ -59,9 +59,11 @@ header{
 #header-dock{
     display:grid;
     grid-template-columns: 1fr 1fr 2fr;
+    align-items: center;
     gap:5px;
 
     .placeholder-img{
+        width:20px;
     }
 }
 
@@ -74,13 +76,17 @@ header{
     align-items: center;
     justify-content: space-between; */
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr 2fr;
 }
 
 #header-welcome{
     display:flex;
     align-items: center;
     gap: 15px;
+
+    .placeholder-img{
+        width: 30px;
+    }
 }
 
 #header-actions{
@@ -90,7 +96,7 @@ header{
     gap: 1rem;
 
     > button{
-        border-radius:10px;
+        border-radius:20px;
         border: none;
         padding: 10px 20px;
     }
