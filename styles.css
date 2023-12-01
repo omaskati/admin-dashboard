@@ -27,6 +27,7 @@ li{
 }
 
 .placeholder-img{
+    width: 10px;
     aspect-ratio: 1;
     background-color: white;
 }
@@ -113,26 +114,32 @@ header .placeholder-img{
     grid-row: 1 / -1;
     background: #456;
 
-    /* padding: var(--padding-sidebar); */
+    padding: var(--padding-sidebar);
 }
 
 .side-item{
 
-    /* display: grid;
+    display: grid;
     grid-template-columns: 1fr 5fr;
     align-items: center;
     gap: var(--padding-sidebar);
-    margin-bottom: calc(3*var(--padding-sidebar)); */
+    margin-bottom: calc(3*var(--padding-sidebar));
 }
 
 #sidebar .placeholder-img{
     /* height:100%; */
-    /* justify-self: end; */
+    justify-self: end;
 }
 
-#brand #brand-name{
-    /* margin:0;
-    padding:0; */
+#brand {
+    #brand-name{
+    margin:0;
+    padding:0;
+    }
+
+    .placeholder-img{
+        scale: 2;
+    }
 }
 
 main{
