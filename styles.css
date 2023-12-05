@@ -147,26 +147,27 @@ main{
     grid-column: 2 / -1;
     grid-row: 2 / -1;
 
-    /* display: grid;
-    grid-template-columns: 2.5fr 1fr; */
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+
 }
 
 main .projects{
-    /* background-color: lightpink; */
+    background-color: lightpink;
+    padding: 10px;
 }
 
 .projects .cards{
 
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    margin: 15px;
-    gap: 15px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 15px;
 }
 
 .projects .cards .card{
-    /* background-color: white;
+    background-color: white;
     border: 2px solid black;
-    aspect-ratio: 1.5/1; */
 }
 
 
