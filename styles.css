@@ -28,7 +28,7 @@ li{
 .placeholder-img{
     width: 10px;
     aspect-ratio: 1;
-    background-color: white;
+    background-color: yellow;
 }
 
 header{
@@ -148,12 +148,14 @@ main{
 
     display: grid;
     grid-template-columns: 2.5fr 1fr;
+    padding: 10px;
+    gap: 10px;
 
 }
 
 main .projects{
     background-color: lightpink;
-    padding: 10px;
+    
 }
 
 .projects .cards{
@@ -176,24 +178,76 @@ main .projects{
 
 
 
-main aside{
+main > aside{
     /* display: grid;
-    grid-template-rows: 1fr 1fr;
-    gap:15px;
-    height: 200px; */
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 250px;
+    gap:15px; */
+    background-color: rgb(108, 144, 144);
 }
 
 main > aside > *{
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
+
+.announcement-card, .trending-card{
+    height: 250px;
+}
+
+
 .announcement-card{
-    /* display: grid;
-    grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
-    border: solid 2px #444; */
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    
+    background-color: white;
+    border: solid 2px red;
+    gap: 10px;
+    padding: 10px;
+}
+
+.announcement{
+    border-top: solid 2px #456;
+    padding-top: 10px;
+}
+
+.announcement-title{
+    margin:0;
+    padding: 0;
 }
 
 .announcement p{
-    /* font-size: 10px; */
+    margin:0;
+    padding: 0;
+    font-size: 0.8rem;
+    display: -webkit-box; 
+    -webkit-box-orient: vertical; 
+    -webkit-line-clamp: 3; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
 }
+
+.trend{
+    display: flex;
+    gap: 10px;
+
+    .placeholder-img{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.trend *{
+    margin:0;
+    padding: 0;
+}
+
+.trending-card{
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(auto, 1fr));   
+}
+
 
 
