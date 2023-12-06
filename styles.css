@@ -28,7 +28,7 @@ li{
 }
 
 .container >*{
-    border: 1px solid #444444;
+    /* border: 1px solid #444444; */
 }
 
 .placeholder-img{
@@ -162,7 +162,7 @@ main{
 }
 
 main .projects{
-    background-color: lightpink;
+    /* background-color: lightpink; */
     
 }
 
@@ -177,17 +177,6 @@ main .projects{
     gap: var(--padding-main);
 }
 
-.projects .cards .card{
-    background-color: white;
-    border: 2px solid black;
-    /* aspect-ratio: 2; */
-    overflow: hidden;
-
-    padding: 10px;
-}
-
-
-
 main > aside{
 
     display: grid;
@@ -197,11 +186,7 @@ main > aside{
 
     gap:15px;
 
-    background-color: rgb(108, 144, 144);
-}
-
-main > aside > *{
-    border: 1px solid black;
+    /* background-color: rgb(108, 144, 144); */
 }
 
 .announcement-card, .trending-card{
@@ -214,10 +199,8 @@ main > aside > *{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
-    
-    background-color: white;
-    border: solid 2px red;
     gap: 10px;
+
     padding: 10px;
 }
 
@@ -263,5 +246,20 @@ main > aside > *{
     grid-template-rows: repeat(auto-fit, minmax(auto, 1fr));   
 }
 
+.shadow{
+    box-shadow: 0px 5px 6px 0 #999;
+}
+
+.card{
+    background-color: white;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.projects .card{
+    border-left: 5px solid #34f;
+}
 
 
