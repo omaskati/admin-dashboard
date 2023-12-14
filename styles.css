@@ -276,9 +276,10 @@ main > aside{
 }
 
 .trend{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
     align-items: center;
-    gap: 15px;
+    gap: 16px;
 
     .placeholder-img{
         height: 90%;
