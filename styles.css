@@ -12,7 +12,7 @@
     --light-color: #EDF2F4;
     --mid-color: #ccd4e0;
 
-    --avatar-color: color-mix(in hsl, white, var(--accent-color));
+    --avatar-color: var(--mid-color);
 
     --text-color: #222;
 
