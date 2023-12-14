@@ -279,12 +279,17 @@ main > aside{
     display: grid;
     grid-template-columns: 1fr 4fr;
     align-items: center;
-    gap: 16px;
+    gap: 18px;
 
     .placeholder-img{
         height: 90%;
         width: auto;
         aspect-ratio: 1;
+
+        > img{
+            width: 100%;
+        }
+
     }
 
     .trend-info{
